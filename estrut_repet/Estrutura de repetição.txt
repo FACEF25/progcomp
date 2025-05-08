@@ -1,0 +1,67 @@
+    Estrutura de repetição 
+
+
+loop infinito 
+
+let conta =1 
+while(conta <=10){// condição de parada 
+alert("OI")
+}
+
+
+jeito certo de fazer 
+let conta =1 
+while(conta <=10){// condição de parada 
+alert("OI")
+conta = conta +1 //conta++
+}
+
+________________________________________
+let conta = 1
+let soma = 0 
+while (conta <= 5){
+alert('oi')
+conta ++
+soma = soma + conta // soma += conta 
+conta ++
+}
+alert(conta) alert (soma)
+
+
+------------------------------------------
+function exe0(){
+    let nota // guarda as notas
+    let conta = 1 // conta de 1 a 6
+    let soma = 0
+    while (conta <= 6){
+        nota = Number(prompt(`Informe a nota ${conta}`))
+        soma = soma + nota
+        conta++ // conta = conta + 1
+    }
+    let media = soma / 6
+    // mostra o resultado
+     alert(`A média das notas é ${media.toFixed(1)}`)
+}
+________________________________________function pesquisaSatisfacao() {
+    let nota //guarda as notas do usuário
+    let cont = 0 //conta de 1 a 10
+    let satisf = 0 // 0 satisfeitos inicialmente
+    let insat = 0 // 0 insatisfeitos inicialmente
+    while (cont <= 10) {
+        nota = Number(prompt(Informe uma nota de 0 a 10: ${cont}))
+        if(nota >= 0 && nota <=10){
+            if (nota >= 8) {
+                satisf++
+            }
+            else if (nota < 5) {
+                insat++
+            }
+            cont++ //conta mais 1
+        }    
+    }
+    let media = nota / 10
+    alert(`
+    Média das notas = ${media.toFixed(1)}
+    Usuários satisfeitos = ${satisf}
+    Usuários insatisfeitos = ${insat}`)
+}
