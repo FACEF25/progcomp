@@ -1,0 +1,29 @@
+function IAP(){
+    let idade, h, peso
+    let somaIdade = 0 
+    let peso90h150 = 0
+    let altos = 0
+    let altosIdade = 0 
+    for(let conta= 1; conta <= 10; conta++)
+        do{
+            peso= Number.prompt(`Informe o peso`)
+        }while(peso <= 0 )
+        do{
+            h= Number.prompt(`Informe a altura em centimetros`)
+        }while(h <= 0 )
+        do{
+            idade= Number.prompt(`Informe a idade`)
+        }while(idade <= 0 )
+
+        somaIdade += idade; 
+
+         if(peso >= 90 && altura <= 150){
+            peso90h150++
+        }
+        if(h >= 190){
+            altos++
+            if(idade >= 10 && idade <=30)
+                altosIdade++
+        }
+    alert (` a-${(somaIdade/10)} b- ${peso90h150} c-${(altos/altosIdade) * 100}`)
+}
