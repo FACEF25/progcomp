@@ -13,6 +13,23 @@ times.push("Santos")//coloca o time santos na ultima posição do vetor
 times.length (tamanho do vetor, comprimento) 
 
 
+push insere o valor dentro do vetor 
+length mostra o tamanho do vetor 
+O I É O INDICE DO VETOR 
+cai na prova
+pedir pro usuario informar o voto,ele entrar com numero errado usando o push fudeu porquye ele vai inserir dado errado entao pra inserção de dados é pra usar /validar entrada 
+
+do{
+vetor[i] = (Number(prompt(`Coloque o numero correspondente a sua satisfação do evento (1)Gostou muito; (2)Gostou; (3)Não gostou   :`))); 
+}while (vet[i] !=1 && vet[i] !=2  && vet[i] !=3  )
+
+
+pra descobrir o maior elemento do vetor 
+
+let maior =vet[0]for(let i =0 ; i< 10; i++){
+if  (vet [i]  > maior ){
+maior  =  vet [i]}
+alert (maior)
 
 
 
