@@ -1,0 +1,20 @@
+vetores em java script
+
+
+declaração de um vetor 
+let vetor = [] //não define tamanho 
+
+for (let i=0; i<4; i++){
+	alert (times[i]
+}
+
+
+times.push("Santos")//coloca o time santos na ultima posição do vetor 
+times.length (tamanho do vetor, comprimento) 
+
+
+
+
+
+
+
